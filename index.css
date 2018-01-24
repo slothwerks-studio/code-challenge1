@@ -1,0 +1,13 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: white;
+	color: black;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
