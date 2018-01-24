@@ -86,3 +86,13 @@ function trainCollision() {
 
 } 
 
+// Remove result text when form is reset...
+
+function resetForm() {
+
+	resultText = document.getElementById("resultText");
+	resultText.innerHTML = "";
+	resultText.className = "hidden";
+
+}
+

@@ -8,41 +8,49 @@
   </head>
   <body>
     <div class="pagecontent">
-      <h1>Tommy's Challenge</h1>
-      <p class="subheader">This one comes to us courtesy Tommy Waalkes.</p>
-      <p>Remember those annoying math problems from school?</p>
-      <blockquote>"Starting in Chicago, a train is going 45 MPH east.  A second train is going west at 60 MPH starting in Detroit.  Where do they collide, assuming they travel in a straight line toward each other?"</blockquote>
-      <p>I want you to write an algorithm in the language of your choice to solve this type of problem.  Grab inputs from the user, specifically the speed and start point of each train (alternatively you can just say they're X distance apart).</p>
-      <p>The goal is to determine when and at what point the trains collide.</p>
-      <hr />
-      <h1>Sloth's Solution</h1>
-      <p>Okay!  Let's get some user input.</p>
-      <form id="userForm" onsubmit="trainCollision();">
-        <label>Train 1 Speed:
-          <input type="number" name="train-speed-1" id="trainSpeed1" value="45" minlength="1" maxlength="3" required />
-        </label>
-        <label>Train 2 Speed:
-          <input type="number" name="train-speed-2" id="trainSpeed2" value="60" minlength="1" maxlength="3" required />
-        </label>
-        <p>We're going to go with a distance between two points.  We'll let <a href="https://www.distancecalculator.net/" target="_blank">DistanceCalculator.Net</a> do our job for us here.  The user needs to be responsible for inputting the appropriate distance...</p>
-        <label>Distance:
-          <input type="number" name="distance" id="distanceBetweenEndpoints" minlength="1" maxlength="6" value="237" required />
-        </label>
-        <select name="distance-unit" id="distanceMeasurementUnit">
-          <option value="miles" selected>Miles</option>
-          <option value="kilometers">Kilometers</option>
-        </select>
-        <label>City 1 Name:
-          <input type="text" name="city-name-1" id="cityName1" value="Chicago" minlength="1" maxlength="30" required />
-        </label>
-        <label>City 2 Name:
-          <input type="text" name="city-name-2" id="cityName2" value="Detroit" minlength="1" maxlength="30" required />
-        </label>
-        <p>... aaaaaaand away we go!</p>
-        <button type="reset" id="resetForm">Reset Form</button>
-        <button type="submit" id="submitButton">Let's do this!</button>
+      <div class="challenge">
+        <h1>Tommy's Challenge</h1>
+        <p class="subheader">This one comes to us courtesy Tommy Waalkes.</p>
+        <p>Remember those annoying math problems from school?</p>
+        <blockquote>"Starting in Chicago, a train is going 45 MPH east.  A second train is going west at 60 MPH starting in Detroit.  Where do they collide, assuming they travel in a straight line toward each other?"</blockquote>
+        <p>I want you to write an algorithm in the language of your choice to solve this type of problem.  Grab inputs from the user, specifically the speed and start point of each train (alternatively you can just say they're X distance apart).</p>
+        <p>The goal is to determine when and at what point the trains collide.</p>
+      </div>
+      <div class="solution">
+        <h1>Sloth's Solution</h1>
         <p id="resultText" class="hidden"></p>
-      </form>
+        <p>Okay!  Let's get some user input.</p>
+        <form id="userForm" onsubmit="trainCollision()">
+          <label>Train 1 Speed:
+            <input type="number" name="train-speed-1" id="trainSpeed1" value="45" minlength="1" maxlength="3" required />
+          </label>
+          <br />
+          <label>Train 2 Speed:
+            <input type="number" name="train-speed-2" id="trainSpeed2" value="60" minlength="1" maxlength="3" required />
+          </label>
+          <p>We're going to go with a distance between two points.  We'll let <a href="https://www.distancecalculator.net/" target="_blank">DistanceCalculator.Net</a> do our job for us here.  The user needs to be responsible for inputting the appropriate distance...</p>
+          <label>Distance:
+            <input type="number" name="distance" id="distanceBetweenEndpoints" minlength="1" maxlength="6" value="237" required />
+          </label>
+          <select name="distance-unit" id="distanceMeasurementUnit">
+            <option value="miles" selected>Miles</option>
+            <option value="kilometers">Kilometers</option>
+          </select>
+          <br />
+          <label>City 1 Name:
+            <input type="text" name="city-name-1" id="cityName1" value="Chicago" minlength="1" maxlength="30" required />
+          </label>
+          <br />
+          <label>City 2 Name:
+            <input type="text" name="city-name-2" id="cityName2" value="Detroit" minlength="1" maxlength="30" required />
+          </label>
+          <p>... aaaaaaand away we go!</p>
+          <div class="button-area">
+            <button type="reset" id="resetButton" onclick="resetForm()">Reset Form</button>
+            <button type="submit" id="submitButton">Let's do this!</button>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
