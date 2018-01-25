@@ -72,7 +72,7 @@ function trainCollision() {
 
 	// Adding toFixed(2) in order to shorten to two decimal places...
 
-	const collisionResult = "With two trains simultaneously leaving " + cityName1 + " and " + cityName2 + " at a distance of " + distanceBetweenEndpoints + " " + distanceMeasurementUnit + ", the trains will collide in " + timeToCollision.toFixed(2) + " hours.  The train leaving " + cityName1 + " will have traveled " + trainDistanceTraveled1.toFixed(2) + " " + distanceMeasurementUnit + ".  The train leaving " + cityName2 + " will have traveled " + trainDistanceTraveled2.toFixed(2) + " " + distanceMeasurementUnit + ".";
+	const collisionResult = "Two trains simultaneously leave " + cityName1 + " and " + cityName2 + " at a distance of " + distanceBetweenEndpoints + " " + distanceMeasurementUnit + ".  Both trains travel straight toward each other at the speed of " + trainSpeed1 + " " + distanceMeasurementUnit + " per hour and " + trainSpeed2 + " " + distanceMeasurementUnit + " per hour, respectively.  At these speeds, the trains will collide in " + timeToCollision.toFixed(2) + " hours.  The train leaving " + cityName1 + " will have traveled " + trainDistanceTraveled1.toFixed(2) + " " + distanceMeasurementUnit + ".  The train leaving " + cityName2 + " will have traveled " + trainDistanceTraveled2.toFixed(2) + " " + distanceMeasurementUnit + ".";
 
 	// Check the result text in the console...
 
