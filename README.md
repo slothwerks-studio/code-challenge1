@@ -13,3 +13,7 @@ The goal is to determine when and at what point the trains collide.
 ### Let's do this!
 
 This challenge can be completed using both front end and back end technologies.  For the front end students, feel free to craft a gorgeous interface!  Dazzle us with modals, transitions and any other goodies you may desire.  Be sure to practice your git skills:  initialize a repo and commit your changes as you work.
+
+### Is there a live demo?
+
+If course there is.  [Check it out!](https://slothwerks-studio.github.io/code-challenge1/)
